@@ -1,0 +1,52 @@
+.App {
+  margin: 10px 30px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 3px;
+  border-style: hidden; /* hide standard table (collapsed) border */
+  box-shadow: 0 0 0 1px #666; /* this draws the table border  */ 
+}
+
+th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+input {
+  margin: 0 3px;
+}
+
+input[type='number']{
+  width: 40px;
+}
+
+.filter-results {
+  margin-bottom: 5px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+}
+
+th, td {
+  min-width: 100px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+@media 
+only screen and (max-width: 760px) {
+  .table {
+    display: block;
+    width: 70%;
+  }
+}
